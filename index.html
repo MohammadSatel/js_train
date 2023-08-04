@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript train</title>
+</head>
+<body>
+Hello
+<br>
+<button onclick="printMyFirst()">first name</button>
+<button onclick="printMyLast()">last name</button>
+
+<div id="d1">
+<button onclick="addButton()">add button</button>
+</div>
+
+<div id="d2">
+    <button onclick="changeColor()">color change</button>
+</div>
+    <script>
+
+        function changeColor() {
+d2.innerHTML = d2.innerHTML + '<button id="b5" style="color: blueviolet; background-color: brown;">color button</button>'
+alert("Added color button!")
+        }
+function addButton(){
+d1.innerHTML = d1.innerHTML + "<button>new button</button>"
+alert("Added new button!")
+}
+function printMyFirst(){
+    console.log("Mohammad");
+    alert("Mohammad!")
+}
+function printMyLast(){
+    console.log("Satel");
+    alert("Satel")
+}
+
+    </script>
+</body>
+
+</html>
